@@ -296,65 +296,6 @@ a {
   margin-bottom: 20px;
 }
 
-.leaderboard-page{
-  background: linear-gradient(to bottom right, #1b1c47, #6c0ab6);
-
-}
-.leaderboard {
-  background: linear-gradient(to bottom right, #1b1c47, #6c0ab6);
-  border: 1px solid #2196f3;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(24, 2, 2, 0.2);
-  padding: 20px;
-  
-  height: 1000px; /* set the height as needed */
-  overflow: scroll;
-}
-
-.leaderboard-title {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #2196f3;
-}
-
-.leaderboard-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.leaderboard-item {
-  align-items: center;
-  border-bottom: 1px solid rgb(15, 5, 5);
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 0;
-}
-
-.leaderboard-item:last-child {
-  border-bottom: none;
-}
-
-.leaderboard-rank {
-  color: #2196f3;
-  font-weight: bold;
-  font-size: 18px;
-  margin-right: 10px;
-}
-
-.leaderboard-name {
-  color: #9ccef6;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.leaderboard-score {
-  color: #2196f3;
-  font-size: 18px;
-}
-
 .full-post-container {
   
   display: flex;
@@ -458,4 +399,75 @@ a {
   height: 100vh;
   width: 100%;
   
+}
+.leaderboard-page {
+  background: linear-gradient(to bottom right, #c1c2f5, #9d49dd);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leaderboard {
+  background: linear-gradient(to bottom right, #ffffff, #e4ccf6);
+  border: 1px solid #2196f3;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(24, 2, 2, 0.2);
+  padding: 20px;
+  max-height: 80%;
+  width: 60%;
+  overflow: scroll;
+}
+
+.leaderboard-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2196f3;
+}
+
+.leaderboard-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.leaderboard-item {
+  align-items: center;
+  border-bottom: 1px solid #2196f3;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.leaderboard-item:last-child {
+  border-bottom: none;
+}
+
+.leaderboard-rank {
+  color: #2196f3;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+
+.leaderboard-score {
+  color: #2196f3;
+  font-size: 18px;
+}
+.leaderboard-avatar {
+  border-radius: 50%;
+  height: 40px;
+  margin-left: 15px; /* increased the margin-right value */
+  width: 40px;
+  align-items: center;
+}
+
+.leaderboard-name {
+  color: #333;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 10px; /* added this line */
 }

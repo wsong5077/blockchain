@@ -8,32 +8,25 @@ export const Leaderboard = () => {
     // Fetch the top coaches from the server and update the state
     // Example data structure: [{ name: "Coach A", score: 100 }, { name: "Coach B", score: 90 }]
     const fetchedCoaches = [
-      { name: "Tiger Woods", score: "-12" },
-      { name: "Phil Mickelson", score: "-11" },
-      { name: "Rory McIlroy", score: "-10" },
-      { name: "Jordan Spieth", score: "-9" },
-      { name: "Justin Thomas", score: "-8" },
-      { name: "Dustin Johnson", score: "-7" },
-      { name: "Bryson DeChambeau", score: "-6" },
-      { name: "Jon Rahm", score: "-5" },
-      { name: "Collin Morikawa", score: "-4" },
-      { name: "Xander Schauffele", score: "-3" },
-      { name: "Patrick Reed", score: "-2" },
-      { name: "Brooks Koepka", score: "-1" },
-      { name: "Hideki Matsuyama", score: "E" },
-      { name: "Webb Simpson", score: "+1" },
-      { name: "Sergio Garcia", score: "+2" },
-      { name: "Jason Day", score: "+3" },
-      { name: "Adam Scott", score: "+4" }
+        { name: "Tiger Woods       ", score: "12", avatar: "https://avatarfiles.alphacoders.com/283/thumb-283778.jpg" },
+  { name: "Phil Mickelson    ", score: "11", avatar: "https://avatarfiles.alphacoders.com/283/thumb-283778.jpg" },
+  { name: "Rory McIlroy      ", score: "10", avatar: "https://avatarfiles.alphacoders.com/283/thumb-283778.jpg" },
+  { name: "Jordan Spieth     ", score: "9", avatar: "https://avatarfiles.alphacoders.com/283/thumb-283778.jpg" },
+  { name: "Justin Thomas    ", score: "8", avatar: "https://avatarfiles.alphacoders.com/283/thumb-283778.jpg" },
+  { name: "Dustin Johnson   ", score: "7", avatar: "https://avatarfiles.alphacoders.com/283/thumb-283778.jpg" },
+  { name: "Jon Rahmmm        ", score: "5", avatar: "https://avatarfiles.alphacoders.com/283/thumb-283778.jpg" },
+  { name: "Collin Morikawa  ", score: "4", avatar: "https://avatarfiles.alphacoders.com/283/thumb-283778.jpg" },
+  { name: "Xander Scuffele", score: "3", avatar: "https://avatarfiles.alphacoders.com/283/thumb-283778.jpg" },
+ 
     ];
     setTopCoaches(fetchedCoaches)
   }, [])
 
   return (
     
-  
+   
     <div className="leaderboard">
-     <Link to="/" className="font-bold text-sm capitalize underlinepink">
+     <Link to="/" className="font-bold text-sm capitalize underlinepink black">
           Back to Home
      </Link>
       <h2 className="leaderboard-title">Top Coaches</h2>
@@ -42,6 +35,7 @@ export const Leaderboard = () => {
         {topCoaches.map((coach, index) => (
           <li className="leaderboard-item" key={index}>
             <span className="leaderboard-rank">{index + 1}</span>
+            <img className="leaderboard-avatar" src={coach.avatar} alt={`${coach.name} avatar`} />
             <span className="leaderboard-name">{coach.name}</span>
             <span className="leaderboard-score">{coach.score}</span>
           </li>
