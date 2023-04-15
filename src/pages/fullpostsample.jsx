@@ -45,16 +45,21 @@ export const FullPost1 = () => {
             <div className="availability-slots">
               <div className="availability-slot">
                 <p>Slot 1: May 1, 2023 at 10:00 AM</p>
-                <button className="schedule-button">Schedule</button>
+                <Link to="/schedule">
+                  <button className="schedule-button">Schedule</button>
+                </Link>
               </div>
               <div className="availability-slot">
                 <p>Slot 2: May 1, 2023 at 2:00 PM</p>
-                <button className="schedule-button">Schedule</button>
-              </div>
+                <Link to="/schedule">
+                  <button className="schedule-button">Schedule</button>
+                </Link>              </div>
               <div className="availability-slot">
                 <p>Slot 3: May 1, 2023 at 6:00 PM</p>
-                <button className="schedule-button">Schedule</button>
-              </div>
+                <Link to="/schedule">
+                  <button className="schedule-button">Schedule</button>
+                </Link>              
+                </div>
             </div>
           </div>
         </div>

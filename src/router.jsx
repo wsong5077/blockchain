@@ -7,6 +7,7 @@ import { FullPost1 } from "./pages/fullpostsample"
 import { ProfilePage } from "./pages/profile"
 import { ChatPage } from "./pages/chat"
 import { SessionPage } from "./pages/sessions"
+import { SchedulePage } from "./pages/schedule"
 
 
 export const Router = () => {
@@ -33,6 +34,9 @@ export const Router = () => {
         </Route>
         <Route path="/sessions"> 
           <SessionPage />
+        </Route>
+        <Route path="/schedule"> 
+          <SchedulePage />
         </Route>
         
       </Switch>

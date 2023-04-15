@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const SessionPage = () => {
+export const SessionPage = () => {
   const appointments = [
     {
       id: 1,
@@ -64,5 +64,3 @@ const SessionPage = () => {
     </div>
   );
 };
-
-export default SessionPage;
