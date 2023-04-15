@@ -290,6 +290,7 @@ a {
   }
 }
 .post-box {
+  
   border: 1px solid rgb(27, 14, 87);
   padding: 20px;
   border-radius: 5px;
@@ -299,7 +300,8 @@ a {
 .full-post-container {
   
   overflow: auto;
-  
+  position: relative; /* make the element positioned relative to its parent */
+  top: -100px; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -352,23 +354,27 @@ a {
   margin: 0;
 }
 
+
 .comment-section {
   margin-top: 40px;
   padding: 20px;
   background-color: #f5f5f5;
 }
 
+
 .comment {
   margin-bottom: 20px;
   border: 1px solid rgb(46, 4, 85);
   padding: 10px;
-  margin-bottom: 10px;
+  background-color: #ffffff;
 }
 
 .comment-author {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  border-bottom: 1px solid #070606;
+  padding-bottom: 5px;
 }
 
 .avatar {
@@ -378,21 +384,55 @@ a {
   margin-right: 10px;
 }
 
-.author-name {
+.author-name-comment {
   font-weight: bold;
+  color: #666666;
 }
 
 .comment-date {
   margin-left: auto;
   font-style: italic;
+  color: #666666;
 }
 
 .comment-content {
-  margin-left: 60px;
+  margin-top: 10px;
+  color: #333333;
+}
+
+.availability-slots {
+  margin-top: 20px;
+  border-top: 1px solid #e6e6e6;
+  padding-top: 10px;
+}
+
+.availability-slot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.availability-slot p {
+  margin: 0;
+  color: #333333;
+}
+
+.schedule-button {
+  background-color: #6c0ab6;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.schedule-button:hover {
+  background-color: #55087c;
 }
 
 .full-post-container {
-  
   overflow: auto;
   display: flex;
   flex-direction: column;
@@ -606,7 +646,6 @@ a {
 .chat-form button:hover {
   background-color: #52227e;
 }
-
 .header {
   background-color: #6c0ab6;
   color: #ffffff;
@@ -615,11 +654,43 @@ a {
   justify-content: space-between;
   padding: 20px;
   margin-bottom: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
 .header h1 {
   margin: 0;
   font-size: 24px;
 }
+.chat-message.user {
+  background-color: #6c0ab6;
+  color: #ffffff;
+}
+
+.chat-message.coach {
+  background-color: #f5f5f5;
+  color: #000000;
+}
 
 
+.post-page {
+  padding-top: 100px;
+}
+.tooltip {
+  display: none; /* hide the tooltip by default */
+  position: absolute;
+  bottom: 100%; /* position the tooltip above the avatar */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.chat-avatar:hover + .tooltip {
+  display: block;
+}

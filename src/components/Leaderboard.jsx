@@ -26,6 +26,7 @@ export const Leaderboard = () => {
     
    
     <div className="leaderboard">
+    
      
       <h2 className="leaderboard-title">Top Coaches</h2>
       

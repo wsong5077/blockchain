@@ -4,9 +4,12 @@ import { Link } from 'react-router-dom';
 export const LeaderboardPage = () => {
   return (
     <div className="leaderboard-page">
-      <Link to="/" className="back-to-home">
-          Back to Home
-      </Link>
+      <div className="header">
+        <h1>Chat with Coach</h1>
+        <div className="back-to-home">
+          <Link to="/">Back to Home</Link>
+        </div>
+      </div>
       <Leaderboard />
     </div>
   );

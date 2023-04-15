@@ -2,8 +2,9 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 export const ChatPage = () => {
   const [message, setMessage] = useState('');
-  const [chat, setChat] = useState([]);
-
+  const [chat, setChat] = useState([
+    { message: 'Welcome to the chat! How can I assist you?', sender: 'coach' },
+  ]);
   const handleInputChange = (event) => {
     setMessage(event.target.value);
   };

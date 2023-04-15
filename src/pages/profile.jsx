@@ -17,7 +17,7 @@ export const ProfilePage = () => {
         
       <div className={styles['profile-page']}>
           
-          <Link to="/" className="back-to-home">
+        <Link to="/" className="back-to-home">
           Back to Home
         </Link>
         <img
@@ -26,7 +26,9 @@ export const ProfilePage = () => {
         className={styles['avatar']}
         />
         <h1 className={styles['profile-name']}>{name}</h1>
+        <Link to="/chat">
         <button className={styles['chat-button']}>Chat</button>
+        </Link>
         <div className={styles['profile-content']}>
           <Skills skills={skills} />
           <Ratings rating={rating} reviews={reviews} />
