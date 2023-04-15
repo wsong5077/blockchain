@@ -6,6 +6,7 @@ import { LeaderboardPage } from "./pages/leaderboardPage";
 import { FullPost1 } from "./pages/fullpostsample"
 import { ProfilePage } from "./pages/profile"
 import { ChatPage } from "./pages/chat"
+import { SessionPage } from "./pages/sessions"
 
 
 export const Router = () => {
@@ -29,6 +30,9 @@ export const Router = () => {
         </Route>
         <Route path="/chat"> 
           <ChatPage />
+        </Route>
+        <Route path="/sessions"> 
+          <SessionPage />
         </Route>
         
       </Switch>

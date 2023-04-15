@@ -17,7 +17,7 @@ export const FullPost1 = () => {
           <img className="avatar" src="https://avatarfiles.alphacoders.com/283/thumb-283778.jpg" alt="avatar" />
           <p className="author-name">Unknown Author</p>
         </div>
-        <p className="post-meta">May 2, 2023</p>
+        
       </div>
       <div className="post-content">
         <p>
@@ -28,11 +28,9 @@ export const FullPost1 = () => {
       <div className="comments">
         
         <h2 style={{ fontSize: "24px", color: "white", marginBottom: "20px" }}>Coach Offerings</h2>
+        <h3 style={{ fontSize: "18px", color: "lightgray", marginBottom: "3px" }}>Click on Coach to View Profile</h3>
 
-        
-
-
-
+      
 
         <div className="comment">
         <div className="comment-header">

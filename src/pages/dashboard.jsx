@@ -60,9 +60,12 @@ export const Dashboard = () => {
             <Link to="/leaderboard" className=" font-bold text-sm ml-2 capitalize underlinepink">
               LeaderBoard
             </Link>
-            <p className=" font-bold text-sm ml-2 capitalize underlinepink">
+            
+
+            <Link to="/sessions" className=" font-bold text-sm ml-2 capitalize underlinepink">
               Sessions
-            </p>
+            </Link>
+
             
             <p className=" font-bold text-sm ml-2 capitalize mr-4 underlinepink">
               All Posts
