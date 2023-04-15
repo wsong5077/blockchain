@@ -4,6 +4,9 @@ import { FullPost } from "./pages/fullpost"
 import { Dashboard } from "src/pages/dashboard"
 import { LeaderboardPage } from "./pages/leaderboardPage"; 
 import { FullPost1 } from "./pages/fullpostsample"
+import { ProfilePage } from "./pages/profile"
+import { ChatPage } from "./pages/chat"
+
 
 export const Router = () => {
   return (
@@ -20,6 +23,12 @@ export const Router = () => {
         </Route>
         <Route path="/fullpostsample"> 
           <FullPost1 />
+        </Route>
+        <Route path="/profile"> 
+          <ProfilePage />
+        </Route>
+        <Route path="/chat"> 
+          <ChatPage />
         </Route>
         
       </Switch>

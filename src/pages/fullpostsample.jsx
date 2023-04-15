@@ -1,6 +1,13 @@
+import { Link } from 'react-router-dom';
 export const FullPost1 = () => {
   return (
     <div className="full-page-container" style={{ backgroundColor: "#6c0ab6" }}>
+      <div className="header">
+        <h1>Post for Help</h1>
+        <div className="back-to-home">
+          <Link to="/">Back to Home</Link>
+        </div>
+      </div>
     <div className="full-post-container background-color">
       <div className="post-header">
         
@@ -21,17 +28,21 @@ export const FullPost1 = () => {
         <h2>Comments</h2>
         <div className="comment">
           <div className="comment-header">
-            <img className="avatar" src="https://avatarfiles.alphacoders.com/283/thumb-283778.jpg" alt="avatar" />
+          <Link to="/profile">
+                <img className="avatar" src="https://avatarfiles.alphacoders.com/283/thumb-283778.jpg" alt="avatar" />
+              </Link>   
             <p className="author-name">John Doe</p>
             <p className="comment-date">May 3, 2023</p>
           </div>
           <div className="comment-content">
-            <p>This is a great post, thanks for sharing!</p>
+            <p>I'm available to help if you still need assistance. Please let me know.</p>
           </div>
         </div>
         <div className="comment">
           <div className="comment-header">
-            <img className="avatar" src="https://avatarfiles.alphacoders.com/283/thumb-283778.jpg" alt="avatar" />
+          <Link to="/profile">
+                <img className="avatar" src="https://avatarfiles.alphacoders.com/283/thumb-283778.jpg" alt="avatar" />
+              </Link>           
             <p className="author-name">Jane Doe</p>
             <p className="comment-date">May 4, 2023</p>
           </div>
@@ -39,16 +50,7 @@ export const FullPost1 = () => {
             <p>Have you tried using the Chrome Developer Tools to debug the issue?</p>
           </div>
         </div>
-        <div className="comment">
-          <div className="comment-header">
-            <img className="avatar" src="https://avatarfiles.alphacoders.com/283/thumb-283778.jpg" alt="avatar" />
-            <p className="author-name">Bob Smith</p>
-            <p className="comment-date">May 5, 2023</p>
-          </div>
-          <div className="comment-content">
-            <p>I'm available to help if you still need assistance. Please let me know.</p>
-          </div>
-        </div>
+        
       </div>
     </div>
     </div>

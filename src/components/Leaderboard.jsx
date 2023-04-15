@@ -26,9 +26,7 @@ export const Leaderboard = () => {
     
    
     <div className="leaderboard">
-     <Link to="/" className="font-bold text-sm capitalize underlinepink black">
-          Back to Home
-     </Link>
+     
       <h2 className="leaderboard-title">Top Coaches</h2>
       
       <ul className="leaderboard-list">

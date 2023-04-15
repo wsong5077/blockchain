@@ -63,14 +63,9 @@ export const Dashboard = () => {
             <p className=" font-bold text-sm ml-2 capitalize underlinepink">
               Sessions
             </p>
-            <p className=" font-bold text-sm ml-2 capitalize underlinepink">
-              Post for Help
-            </p>
-            <p className=" font-bold text-sm ml-2 capitalize underlinepink">
-              Post to Help
-            </p>
+            
             <p className=" font-bold text-sm ml-2 capitalize mr-4 underlinepink">
-              All
+              All Posts
             </p>
               
               <img
